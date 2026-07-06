@@ -55,11 +55,11 @@ local function fadeIn()
     end
 end
 
-http.Fetch("https://files.catbox.moe/2vm6xm.jpg", function(img)
+http.Fetch("https://github.com/InfernoLua1337/snippets/blob/main/images.jpg?raw=true", function(img)
     file.Write("bobbysanya.png", img)
     mat = Material("../data/bobbysanya.png")
 
-    sound.PlayURL("https://files.catbox.moe/6azhzz.mp3", "noplay", function(sound)
+    sound.PlayURL("https://github.com/InfernoLua1337/snippets/raw/refs/heads/main/bobby.mp3", "noplay", function(sound)
 		sound:SetVolume(2)
         snd = sound
         switchStep(fadeIn)
